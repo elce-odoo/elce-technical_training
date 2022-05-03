@@ -13,8 +13,8 @@ class Spaceship(models.Model):
 
     level = fields.Selection(string='Level',
                             selection=[('beginner', 'Beginner'),
-                                        ('intermediate', 'Intermediate'),
-                                        ('advanced', 'Advanced')],
+                                       ('intermediate', 'Intermediate'),
+                                       ('advanced', 'Advanced')],
                             copy=False)
     
     active = fields.Boolean(string='Active', default=True)
