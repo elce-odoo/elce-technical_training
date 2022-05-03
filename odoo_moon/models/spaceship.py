@@ -8,7 +8,7 @@ class Spaceship(models.Model):
     _name = "moon.spaceship"
     _description = "Spaceship info"
 
-    name = fields.Cahr(string='Title', required=True)
+    name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
 
     level = fields.Selection(string='Level'
