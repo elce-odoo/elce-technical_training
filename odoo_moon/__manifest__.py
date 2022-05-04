@@ -24,7 +24,7 @@
     ],
     
     'demo': [
-        'demo/moon)demo.xml',
+        'demo/moon_demo.xml',
     ],
     
     'license': 'LGPL-3',
