@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record model="ir.actions.act_window" id="spaceship_list_action">
+        <field name="name">Spaceships</field>
+        <field name="res_model">moon.spaceship</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Make the first one
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="Odoo Moon"
+              id="menu_moon"
+              sequence="1"/>
+    
+    <menuitem name="Odoo Moon"
+              id="menu_moon_sub"
+              parent="menu_moon"
+              sequence="2"/>
+
+    <menuitem name="Spaceships"
+              id="menu_moon_spaceships"
+              parent="menu_moon_sub"
+              sequence="3"
+              action="spaceship_list_action"/>
+        
+</odoo>
+
