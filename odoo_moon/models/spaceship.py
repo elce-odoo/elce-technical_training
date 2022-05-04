@@ -2,7 +2,7 @@
 
 
 from odoo import models, fields, api
-from odoo.exception import  UserError, ValidationError
+from odoo.exceptions import  UserError, ValidationError
 
 class Spaceship(models.Model):
     
@@ -27,6 +27,12 @@ class Spaceship(models.Model):
     crew_size = fields.Integer(string='Crew size')
 
     @api.constrains('width', 'height')
-    def _constrain_measures(self):
+    def _check_measures(self):
         if self.width > self.height:
             raise UserError('Width cant be bigger than height')
+
+    @api.constrains('description')
+    def _check_description_length(self):
+        for record in self:
+            if record.description > 10:
+                raise ValidationError('Too long dude')
