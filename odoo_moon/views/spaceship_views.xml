@@ -13,9 +13,30 @@
                             <group>
                                 <field name="active"/>
                             </group>
+                            <group>
+                                <field name="height"/>
+                            </group>
+                            <notebook>
+                                <page string="Description">
+                                    <field name="description"/>
+                                </page>
+                            </notebook>
                         </group>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="spachesip_view_tree" model="ir.ui.view">
+            <field name="name">moon.spaceship.form</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceship List Lista">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="height"/>
+                    <field name="description"/>
+                </tree>
             </field>
         </record>
     </data>
