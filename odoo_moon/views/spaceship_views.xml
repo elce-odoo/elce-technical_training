@@ -32,7 +32,7 @@
             <field name="name">moon.spaceship.list</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
-                <tree string="Spaceship List Lista" create=True>
+                <tree string="Spaceship List Lista">
                     <field name="name"/>
                     <field name="active"/>
                     <field name="height"/>
