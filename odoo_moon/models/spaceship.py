@@ -21,3 +21,5 @@ class Spaceship(models.Model):
     active = fields.Boolean(string='Active', default=True)
 
     height = fields.Float(string='Height')
+
+    crew_size = fields.Integer(string='Crew size')

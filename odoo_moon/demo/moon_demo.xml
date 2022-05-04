@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data noupdate="1">
-        <record model="moon.spaceship" id="erp_101">
+        <record model="moon.spaceship" id="spcsh_001">
             <field name="name">ERP 101</field>
             <field name="description">ERP 101</field>
             <field name="height">1</field>
+            <field name="crew_size">100</field>
         </record>
 
-        <record model="moon.spaceship" id="erp_102">
+        <record model="moon.spaceship" id="spcsh_002">
             <field name="name">ERP 102</field>
             <field name="description">ERP 102 and more</field>
             <field name="height">2</field>
+            <field name="crew_size">100</field>
         </record>
 
-        <record model="moon.spaceship" id="erp_103">
+        <record model="moon.spaceship" id="spcsh_002">
             <field name="name">ERP 103</field>
             <field name="description"></field>
             <field name="height">2</field>
+            <field name="crew_size">8</field>
         </record>
 
     </data>
