@@ -31,8 +31,7 @@
             <field name="name">moon.spaceship.form</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
-                <tree string="Spaceship List Lista">
-                    <attribute name="create"/>
+                <tree string="Spaceship List Lista" decoration-info="active == 'True'">
                     <field name="name"/>
                     <field name="active"/>
                     <field name="height"/>
