@@ -31,8 +31,8 @@ class Spaceship(models.Model):
         if self.width > self.height:
             raise UserError('Width cant be bigger than height')
 
-    @api.constrains('description')
-    def _check_description_length(self):
-        for record in self:
-            if record.description > 10:
-                raise ValidationError('Too long dude')
+    # @api.constrains('description')
+    # def _check_description_length(self):
+    #     for record in self:
+    #         if record.description > 10:
+    #             raise ValidationError('Too long dude')
