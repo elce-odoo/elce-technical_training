@@ -28,7 +28,7 @@
         </record>
 
         <record id="spachesip_view_tree" model="ir.ui.view">
-            <field name="name">moon.spaceship.form</field>
+            <field name="name">moon.spaceship.list</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
                 <tree string="Spaceship List Lista" create=True>
@@ -41,7 +41,7 @@
         </record>
 
         <record id="spachesip_view_search" model="ir.ui.view">
-            <field name="name">moon.spaceship.form</field>
+            <field name="name">moon.spaceship.search</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
                 <search string="Spaceship List Lista">
@@ -50,6 +50,19 @@
                     <field name="height"/>
                     <field name="description"/>
                 </search>
+            </field>
+        </record>
+
+        <record id="spachesip_view_search" model="ir.ui.view">
+            <field name="name">moon.spaceship.graph</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
+                <graph string="Spaceship">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="height"/>
+                    <field name="description"/>
+                </graph>
             </field>
         </record>
     </data>
