@@ -39,5 +39,18 @@
                 </tree>
             </field>
         </record>
+
+        <record id="spachesip_view_search" model="ir.ui.view">
+            <field name="name">moon.spaceship.form</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
+                <search string="Spaceship List Lista">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="height"/>
+                    <field name="description"/>
+                </search>
+            </field>
+        </record>
     </data>
 </odoo>
