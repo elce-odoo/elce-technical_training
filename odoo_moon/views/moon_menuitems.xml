@@ -24,7 +24,7 @@
     <menuitem name="Spaceships"
               id="menu_moon_spaceships"
               parent="menu_moon_sub"
-              sequence="3"
+              sequence="2"
               action="spaceship_list_action"/>
         
 </odoo>
