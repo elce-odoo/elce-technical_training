@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <record id="spachesip_view_form" model="ir.ui.view">
+            <field name="name">moon.spaceship.form</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
+                <form string="Spaceship Form">
+                    <sheet>
+                        <h1><field name="name"/><h1>
+                        <group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
