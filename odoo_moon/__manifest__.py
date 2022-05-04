@@ -23,7 +23,7 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/moon_menuitems.xml',
-        'views/moon_views.xml',
+        'views/spaceship_views.xml',
     ],
     
     'demo': [
