@@ -12,7 +12,7 @@ class Spaceship(models.Model):
 
     name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
-    owner = fields.Char(string='Title')
+    owner = fields.Text(string='Owner')
     state = fields.Selection(string='State', selection=[('draft', 'Draft'),
                                                         ('sold', 'Sold')])
 
@@ -45,3 +45,6 @@ class Spaceship(models.Model):
         for record in self:
             if len(record.owner) > 0:
                 record.state = 'sold'
+            else:
+                record.state = 'draft' 
+
