@@ -62,12 +62,14 @@
             <field name="name">moon.spaceship.graph</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
-                <graph string="Spaceship">
-                    <field name="name"/>
-                    <field name="active"/>
-                    <field name="height"/>
-                    <field name="description"/>
-                </graph>
+                <dashboard string="Spaceship">
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="height"/>
+                        <field name="description"/>
+                    </group>
+                </dashboard>
             </field>
         </record>
     </data>
