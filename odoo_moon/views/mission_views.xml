@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <record id="mission_view_form" model="ir.ui.view">
+            <field name="name">moon.mission.form</field>
+            <field name="model">moon.mission</field>
+            <field name="arch" type="xml">
+                <form string="Mission Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="destination"/>
+                                <field name='active'/>
+                                <field name='spaceship'/>
+                            </group>
+                            <group>
+                                <field name="crew_ids"/>
+                            </group>
+                            <!-- <group>
+                                <notebook>
+                                    <page string="Description">
+                                        <field name="description"/>
+                                    </page>
+                                </notebook>
+                            </group> -->
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="spachesip_view_tree" model="ir.ui.view">
+            <field name="name">moon.spaceship.list</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
+                <tree string="Spaceship List Lista">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="destination"/>
+                    <field name="crew_ids"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="spachesip_view_search" model="ir.ui.view">
+            <field name="name">moon.spaceship.search</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
+                <search string="Spaceship List Lista">
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="destination"/>
+                    <field name="crew_ids"/>
+                </search>
+            </field>
+        </record>
+    </data>
+</odoo>
