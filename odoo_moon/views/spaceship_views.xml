@@ -17,11 +17,13 @@
                                 <field name="height"/>
                                 <field name="width"/>
                             </group>
-                            <notebook>
-                                <page string="Description">
-                                    <field name="description"/>
-                                </page>
-                            </notebook>
+                            <group>
+                                <notebook>
+                                    <page string="Description">
+                                        <field name="description"/>
+                                    </page>
+                                </notebook>
+                            </group>
                         </group>
                     </sheet>
                 </form>
