@@ -1,5 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-moon_admin,moon admin,model_moon_spaceship,group_moon_admin,1,1,1,1
-moon_real_all,moon read all,model_moon_spaceship,,1,0,0,0
-mission_admin,mission admin,model_moon_mission,group_mission_admin,1,1,1,1
-mission_real_all,mission read all,model_moon_mission,,1,0,0,0
+spaceship_admin,moon admin,model_moon_spaceship,group_moon_admin,1,1,1,1
+spaceship_read_all,moon read all,model_moon_spaceship,,1,0,0,0
+mission_admin,mission admin,model_moon_mission,group_moon_admin,1,1,1,1
+mission_read_all,mission read all,model_moon_mission,,1,0,0,0
