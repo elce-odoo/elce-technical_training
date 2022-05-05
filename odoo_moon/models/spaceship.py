@@ -13,7 +13,8 @@ class Spaceship(models.Model):
     name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
     owner = fields.Char(string='Title')
-    state = fields.Selection(string='State')
+    state = fields.Selection(string='State', selection=[('draft', 'Draft'),
+                                                        ('sold', 'Sold')])
 
     # level = fields.Selection(string='Level',
     #                         selection=[('beginner', 'Beginner'),
@@ -38,3 +39,9 @@ class Spaceship(models.Model):
         for record in self:
             if len(record.description) > 10:
                 raise ValidationError('too long')
+
+    @api.onchange('owner')
+    def _update_state(self):
+        for record in self:
+            if len(record.owner) > 0:
+                record.state = 'sold'
