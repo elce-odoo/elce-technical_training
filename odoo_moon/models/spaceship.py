@@ -26,8 +26,20 @@ class Spaceship(models.Model):
 
     height = fields.Float(string='Height')
     width = fields.Float(string='Width')
+    depth = fields.Float(string='Depth')
+
+    volume = fields.Float(compute="_compute_volume", readonly=True)
 
     crew_size = fields.Integer(string='Crew size')
+
+    @api.depends('height', 'width', 'depth')
+    def _compute_volume(self):
+        for record in self:
+            if not record.width or not record.height or not record.depth:
+                record.volume = 0
+            else:
+                record.volume = record.width * record.height * record.depth
+
 
     @api.constrains('width', 'height')
     def _check_measures(self):
