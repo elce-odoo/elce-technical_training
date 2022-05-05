@@ -16,8 +16,8 @@
                                 <field name='state'/>
                             </group>
                             <group>
-                                <field name="height"/>
-                                <field name="width"/>
+                                <field name="volume"/>
+                                <!-- <field name="width"/> -->
                             </group>
                             <group>
                                 <notebook>
