@@ -33,6 +33,5 @@ class Spaceship(models.Model):
 
     @api.constrains('description')
     def _check_description_length(self):
-        for record in self:
-            if len(record.description) > 10:
-                raise ValidationError('Too long dude')
+        if len(self.description) > 10:
+            raise ValidationError('Too long dude')
