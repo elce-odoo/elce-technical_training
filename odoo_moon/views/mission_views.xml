@@ -33,11 +33,11 @@
             </field>
         </record>
 
-        <record id="spachesip_view_tree" model="ir.ui.view">
-            <field name="name">moon.spaceship.list</field>
-            <field name="model">moon.spaceship</field>
+        <record id="mission_view_tree" model="ir.ui.view">
+            <field name="name">moon.mission.list</field>
+            <field name="model">moon.mission</field>
             <field name="arch" type="xml">
-                <tree string="Spaceship List Lista">
+                <tree string="Missions">
                     <field name="name"/>
                     <field name="active"/>
                     <field name="destination"/>
@@ -46,11 +46,11 @@
             </field>
         </record>
 
-        <record id="spachesip_view_search" model="ir.ui.view">
-            <field name="name">moon.spaceship.search</field>
-            <field name="model">moon.spaceship</field>
+        <record id="smission_view_search" model="ir.ui.view">
+            <field name="name">moon.mission.search</field>
+            <field name="model">moon.mission</field>
             <field name="arch" type="xml">
-                <search string="Spaceship List Lista">
+                <search string="Missions">
                     <field name="name"/>
                     <field name="active"/>
                     <field name="destination"/>
