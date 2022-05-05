@@ -12,6 +12,8 @@ class Spaceship(models.Model):
 
     name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
+    owner = fields.Char(string='Title')
+    state = fields.Selection(string='State')
 
     # level = fields.Selection(string='Level',
     #                         selection=[('beginner', 'Beginner'),
@@ -34,5 +36,5 @@ class Spaceship(models.Model):
     @api.onchange('description')
     def _check_description_length(self):
         for record in self:
-            if len(self.description) > 10:
+            if len(record.description) > 10:
                 raise ValidationError('too long')
