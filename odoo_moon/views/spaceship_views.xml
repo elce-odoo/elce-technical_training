@@ -76,11 +76,9 @@
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
                 <dashboard string="Spaceship">
-                    <group>
-                        <field name="name"/>
-                        <field name="active"/>
-                        <field name="description"/>
-                    </group>
+                    <field name="name"/>
+                    <field name="active"/>
+                    <field name="description"/>
                 </dashboard>
             </field>
         </record>
