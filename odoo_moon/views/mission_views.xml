@@ -58,7 +58,7 @@
             </field>
         </record>
 
-        <record id="mission_view_map" model="ir.ui.view">
+        <!-- <record id="mission_view_map" model="ir.ui.view">
             <field name="name">moon.mission.map</field>
             <field name="model">moon.mission</field>
             <field name="arch" type="xml">
@@ -66,6 +66,6 @@
                     <field name="name" string="Customer Name"/>
                 </map>
             </field>
-        </record>
+        </record> -->
     </data>
 </odoo>
