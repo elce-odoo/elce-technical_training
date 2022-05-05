@@ -4,7 +4,7 @@
     <record model="ir.actions.act_window" id="spaceship_list_action">
         <field name="name">Spaceships</field>
         <field name="res_model">moon.spaceship</field>
-        <field name="view_mode">tree,form,dashboard</field>
+        <field name="view_mode">tree,form,dashboard,graph</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Make the first one
@@ -15,7 +15,7 @@
     <record model="ir.actions.act_window" id="mission_list_action">
         <field name="name">Missions</field>
         <field name="res_model">moon.mission</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,map</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Make the first one
