@@ -71,7 +71,7 @@
             </field>
         </record>
 
-        <record id="spachesip_view_dashboard" model="ir.ui.view">
+        <!-- <record id="spachesip_view_dashboard" model="ir.ui.view">
             <field name="name">moon.spaceship.graph</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
@@ -84,6 +84,6 @@
                     </group>
                 </dashboard>
             </field>
-        </record>
+        </record> -->
     </data>
 </odoo>
