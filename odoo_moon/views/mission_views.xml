@@ -57,15 +57,5 @@
                 </search>
             </field>
         </record>
-
-        <!-- <record id="mission_view_map" model="ir.ui.view">
-            <field name="name">moon.mission.map</field>
-            <field name="model">moon.mission</field>
-            <field name="arch" type="xml">
-                <map res_partner="name" routing="true" hide_name="true">
-                    <field name="name" string="Customer Name"/>
-                </map>
-            </field>
-        </record> -->
     </data>
 </odoo>
