@@ -62,12 +62,29 @@
             <field name="name">moon.spaceship.graph</field>
             <field name="model">moon.spaceship</field>
             <field name="arch" type="xml">
+                <graph string="Spaceship">
+                    <group>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="volume"/>
+                        <field name="description"/>
+                    </group>
+                </graph>
+            </field>
+        </record>
+
+        <record id="spachesip_view_search" model="ir.ui.view">
+            <field name="name">moon.spaceship.graph</field>
+            <field name="model">moon.spaceship</field>
+            <field name="arch" type="xml">
                 <dashboard string="Spaceship">
                     <group>
                         <field name="name"/>
                         <field name="active"/>
-                        <field name="height"/>
                         <field name="description"/>
+                    </group>
+                    <group>
+                        <field name="volume"/>
                     </group>
                 </dashboard>
             </field>
