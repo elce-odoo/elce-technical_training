@@ -81,9 +81,9 @@
                         <field name="active"/>
                         <field name="description"/>
                     </group>
-                    <group>
+                    <!-- <group>
                         <field name="volume"/>
-                    </group>
+                    </group> -->
                 </dashboard>
             </field>
         </record>
