@@ -9,8 +9,8 @@
                 <xpath expr="//field[@name='date_start']" position="after">
                     <field anme="session_id"/>
                 </xpath>
-                <field name="partner_id" position="before">
-                    <field name="instructor_id"/>
+                <field name="partner_id">
+                    <field name="leader"/>
                 </field>
                 <xpath expr="//sheet//notebook" position="inside">
                     <page string="Crew">
