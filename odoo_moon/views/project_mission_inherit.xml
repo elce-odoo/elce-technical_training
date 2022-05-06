@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='date_start']" position="after">
                     <field anme="session_id"/>
-                <xpath>
+                </xpath>
                 <field name="partner_id" position="before">
                     <field name="instructor_id"/>
                 </field>
