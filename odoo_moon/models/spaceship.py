@@ -32,6 +32,9 @@ class Spaceship(models.Model):
 
     crew_size = fields.Integer(string='Crew size')
 
+    crew_ids = fields.Many2many(string='Crew',
+                                inverse_name="spaceship_id")
+
     @api.depends('height', 'width', 'depth')
     def _compute_volume(self):
         for record in self:
