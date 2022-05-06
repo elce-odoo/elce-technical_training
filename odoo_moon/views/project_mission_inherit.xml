@@ -7,9 +7,9 @@
             <field name="inherit_id" ref="project.view_project_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='date_start']" position="after">
-                    <field anme="session_id"/>
+                    <field name="spaceship"/>
                 </xpath>
-                <field name="partner_id">
+                <field name="partner_id" position="before">
                     <field name="leader"/>
                 </field>
                 <xpath expr="//sheet//notebook" position="inside">
