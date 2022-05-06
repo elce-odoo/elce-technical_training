@@ -18,13 +18,6 @@
                             <group>
                                 <field name="crew_ids"/>
                             </group>
-                            <group>
-                                <notebook>
-                                    <page string="Description">
-                                        <field name="description"/>
-                                    </page>
-                                </notebook>
-                            </group>
                         </group>
                         
                     </sheet>
