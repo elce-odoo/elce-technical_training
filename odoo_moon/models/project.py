@@ -14,3 +14,6 @@ class Project(models.Model):
 
     crew_ids = fields.Many2many(string='Crew',
                                 related='mission_id.crew_ids')
+
+    spaceship = fields.One2many(string='Spaceship',
+                                related='mission_id.spaceship')
