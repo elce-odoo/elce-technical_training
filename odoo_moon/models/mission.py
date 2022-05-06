@@ -17,10 +17,10 @@ class Mission(models.Model):
     leader_id = fields.Many2one(comodel_name='res.partner', 
                             string='Leader')
 
-    # spaceship_id = fields.Many2one(comodel_name='moon.spaceship',
-    #                             string='Spaceship',
-    #                             ondelete='cascade',
-    #                             required=True)
+    spaceship_id = fields.Many2one(comodel_name='moon.spaceship',
+                                string='Spaceship',
+                                ondelete='cascade',
+                                required=True)
 
     crew_ids = fields.Many2many(comodel_name='res.partner',
                                 string='Crew')

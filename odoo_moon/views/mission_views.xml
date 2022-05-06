@@ -13,18 +13,18 @@
                             <group>
                                 <field name="destination"/>
                                 <field name='active'/>
-                                <field name='spaceship'/>
+                                <field name='spaceship_id'/>
                             </group>
                             <group>
                                 <field name="crew_ids"/>
                             </group>
-                            <!-- <group>
+                            <group>
                                 <notebook>
                                     <page string="Description">
                                         <field name="description"/>
                                     </page>
                                 </notebook>
-                            </group> -->
+                            </group>
                         </group>
                         
                     </sheet>
