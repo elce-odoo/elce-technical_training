@@ -16,16 +16,7 @@
                     <field name="leader_id"/>
                 </field>
 
-                <xpath expr="//sheet//notebook" position="inside">
-                    <page string="Crew" attrs="{'invisible':[('mission_id', '=', False)]}">
-                        <field name="crew_ids">
-                            <tree>
-                                <field name="name"/>
-                                <field name="phone"/>
-                            </tree>
-                        </field>
-                    </page>
-                </xpath>
+               
             </field>
         </record>
     </data>

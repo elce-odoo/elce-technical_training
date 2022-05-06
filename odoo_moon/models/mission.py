@@ -22,7 +22,7 @@ class Mission(models.Model):
                                 ondelete='cascade',
                                 required=True)
 
-    crew_ids = fields.Many2many(comodel_name='res.partner',
-                                string='Crew')
+    # crew_ids = fields.Many2many(comodel_name='res.partner',
+    #                             string='Crew')
 
     
