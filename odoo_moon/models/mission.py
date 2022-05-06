@@ -14,6 +14,9 @@ class Mission(models.Model):
     destination = fields.Char(string="Destination")
     active = fields.Boolean(string='Active', default=True)
 
+    leader = fields.One2many(comodel_name='res.partner', 
+                            string='Leader')
+
     spaceship = fields.Many2one(comodel_name='moon.spaceship',
                                 string='Spaceship',
                                 ondelete='cascade',
@@ -21,3 +24,5 @@ class Mission(models.Model):
 
     crew_ids = fields.Many2many(comodel_name='res.partner',
                             string='Crew')
+
+    
