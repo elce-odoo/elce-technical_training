@@ -9,12 +9,17 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='date_start']" position="after">
                     <field name="mission_id"/>
-                    <field name="spaceship_id"/>
                 </xpath>
 
                 <field name="partner_id" position="before">
                     <field name="leader_id"/>
                 </field>
+
+                <xpath expr="//sheet//noteook" position="inside">
+                    <page string="Crew">
+                        <field name="crew_ids"/>
+                    </page>
+                </xpath>
             </field>
         </record>
     </data>
