@@ -9,7 +9,7 @@ class Project(models.Model):
                                  string='Related Mission',
                                  ondelete='set null')
 
-    leader_id = fields.One2many(string='Mission Instructor',
+    leader_id = fields.Many2one(string='Mission Instructor',
                                 related='mission_id.leader_id')
 
     crew_ids = fields.Many2many(string='Crew',
