@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <record model="ir.actions.act_window" id="academy_list_action">
+        <field name="name">Academy</field>
+        <field name="res_model">academy.course</field>
+        <field name="view_mode">tree,form,dashboard,graph</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Make the first one
+            </p>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="mission_list_action">
+        <field name="name">Missions</field>
+        <field name="res_model">academy.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Make the first one
+            </p>
+        </field>
+    </record>
+
+    <menuitem name="Odoo Moon"
+              id="menu_academy"
+              sequence="1"/>
+    
+    <menuitem name="Odoo Moon"
+              id="menu_academy_sub"
+              parent="menu_academy"
+              sequence="2"/>
+
+    <menuitem name="Spaceships"
+              id="menu_academy_spaceships"
+              parent="menu_academy_sub"
+              sequence="3"
+              action="academy_list_action"/>
+</odoo>
