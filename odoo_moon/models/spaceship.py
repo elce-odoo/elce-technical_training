@@ -33,6 +33,7 @@ class Spaceship(models.Model):
     crew_size = fields.Integer(string='Crew size')
 
     crew_ids = fields.Many2many(string='Crew',
+                                comodel_name="res.partner",
                                 inverse_name="spaceship_id")
 
     @api.depends('height', 'width', 'depth')
