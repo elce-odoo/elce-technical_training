@@ -17,7 +17,7 @@ class Mission(models.Model):
     leader_id = fields.Many2one(comodel_name='res.partner', 
                             string='Leader')
 
-    spaceship = fields.One2many(comodel_name='moon.spaceship',
+    spaceship_id = fields.One2many(comodel_name='moon.spaceship',
                                 string='Spaceship',
                                 ondelete='cascade',
                                 required=True)
