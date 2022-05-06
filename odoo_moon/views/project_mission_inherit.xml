@@ -15,7 +15,7 @@
                     <field name="leader_id"/>
                 </field>
 
-                <xpath expr="//sheet//noteook" position="inside">
+                <xpath expr="//sheet//notebook" position="inside">
                     <page string="Crew">
                         <field name="crew_ids"/>
                     </page>
