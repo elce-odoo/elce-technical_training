@@ -5,8 +5,8 @@
         <record model="ir.ui.view" id="view_project_form_inherit_moon">
             <field name="name">project.project.form.inherit.moon</field>
             <field name="model">project.project</field>
-            <field name="inherit_id" ref="project.view_project_form"/>
-            <!-- <field name="arch" type="xml">
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
                 <xpath expr="//field[@name='date_start']" position="after">
                     <field name="mission_id"/>
                     <field name="spaceship_id"/>
@@ -15,7 +15,7 @@
                 <field name="partner_id" position="before">
                     <field name="leader_id"/>
                 </field>
-            </field> -->
+            </field>
         </record>
     </data>
 </odoo>
