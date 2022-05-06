@@ -25,7 +25,6 @@
         'views/moon_menuitems.xml',
         'views/spaceship_views.xml',
         'views/mission_views.xml',
-        'views/project_mission_inherit.xml',
     ],
     
     'demo': [
