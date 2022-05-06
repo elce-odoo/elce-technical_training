@@ -7,4 +7,10 @@ class Project(models.Model):
 
     mission_id = fields.Many2one(comodel_name='moon.mission',
                                  string='Related Mission',
-                                 ondelete='cascade')
+                                 ondelete='set null')
+
+    leader_id = fields.Many2one(string='Mission Instructor',
+                                related='mission_id.leader')
+
+    crew_ids = fields.Many2many(string='Crew',
+                                related='mission_id.crew_ids')
