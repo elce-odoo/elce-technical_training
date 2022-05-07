@@ -13,7 +13,7 @@
 
                 <field name="partner_id" position="after">
                     <field name="leader_id"/>
-                    <field name='spacehip_id'/>
+                    <field name='spaceship_id'/>
                 </field>
 
                 <xpath expr="//sheet//notebook" position="inside">
