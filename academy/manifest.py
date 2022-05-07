@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Odoo moon',
+    'name': 'Academy',
     
     'summary': """Academy app""",
     
@@ -17,7 +17,7 @@
     'category': 'Training',
     'version': '0.1',
     
-    'depends': ['project'],
+    'depends': ['sales'],
     
     'data': [
         'security/security.xml',
