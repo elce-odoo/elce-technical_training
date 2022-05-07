@@ -25,6 +25,8 @@
         'views/academy_menuitems.xml',
         'views/academy_course.xml',
         'views/academy_session.xml',
+        'views/sales_views_inherit',
+        'views/academy_product_template',
     ],
     
     'demo': [
