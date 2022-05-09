@@ -33,5 +33,5 @@ class ProjectWizard(models.TransientModel):
                 'alias_enabled': 1,
                 'alias_name': mission_id.name,
                 'alias_id': mission_id.name,
-                'mail_alias': self.env.mail_alias,
+                'mail_alias': '@moon.com',
             })
