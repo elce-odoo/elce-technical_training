@@ -29,6 +29,6 @@ class ProjectWizard(models.TransientModel):
             for member in self.crew_ids:
                 project_id = self.env['project.project'].create({
                     'company_id': self.env.company,
-                    'name': 'sdf',
-                    'alias_id': 'sdfd',
+                    'name': mission_id.name,
+                    'alias_id': mission_id.name,
                 })

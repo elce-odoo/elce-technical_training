@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report 
+        id="report_spaceship"
+        model="moon.spaceship"
+        string="Spaceship Report"
+        name="moon.report_spaceship_document"
+        file="moon.report_spaceship"
+        report_type="qweb-html"/>
+
+    <template id="report_spaceship_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16"/>
+                        <div class="row mt32 mb32" id="session_info">
+                            <div class="col-auto mb-w100 mb-2">
+                                <strong>Mission Duration</strong>
+
+                            </div>
+                            <div t-if="doc.owner" class="col-auto mw-100 mb-2">
+                                <strong>Owner:</strong>
+                                <span t-field="doc.owner.name"/>
+                            </div>
+                            <h4>Missions</h4>
+                            <table class="table table-sm o_main_table">
+                                <thead>
+                                    <tr>
+                                        <th name="th_name"></th>
+                                        <th name="th_name"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-foreach="doc.missions" t-as="mission">
+                                        <tr>
+                                            <td t-if="mission.name" name="td_name">
+                                                <span t-field="mission.name"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -36,6 +36,10 @@ class Spaceship(models.Model):
                                 comodel_name="res.partner",
                                 inverse_name="spaceship_id")
 
+    missions = fields.One2many(string="Missions",
+                                comodel_name="moon.mission",
+                                inverse_name="spaceship_id")
+
     @api.depends('height', 'width', 'depth')
     def _compute_volume(self):
         for record in self:
