@@ -35,7 +35,7 @@
             <field name="res_model">moon.mission</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
-            <field name="binding_model_id" ref="odoo_moon.moon_project_wizard"/>
+            <field name="binding_model_id" ref="odoo_moon.model_moon_project_wizard"/>
             <field name="binding_view_types">form</field>
         </record>
     </data>
