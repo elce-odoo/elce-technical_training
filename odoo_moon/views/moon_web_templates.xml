@@ -14,9 +14,9 @@
                             </h3>
                         </t>
                         <t t-foreach="missions" t-as="mission">
-                            <h3>
+                            <p>
                                 <t t-esc="mission.spaceship_id"/>
-                            </h3>
+                            </p>
                         </t>
                     </div>
                 </div>
