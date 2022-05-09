@@ -6,7 +6,7 @@ username = 'admin'
 password = 'admin'
 
 common = client.ServerProxy("{}/xmlrpc/2/common".format(url))
-print(common.version())
+print(common.version)
 
 uid = common.authenticate(db, username, password, {})
 print(uid)
