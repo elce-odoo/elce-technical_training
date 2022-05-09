@@ -26,7 +26,6 @@
         'views/spaceship_views.xml',
         'views/mission_views.xml',
         'views/project_mission_inherit.xml',
-        'views/mission_inherit.xml',
         'wizard/project_wizard.xml',
     ],
     
