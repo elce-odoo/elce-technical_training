@@ -9,17 +9,17 @@
                 <form string="Create project">
                     <group>
                         <field name="mission_id"/>
-                        <field name="name" class="o_project_name oe_inline" string="Project Name" placeholder="e.g. Office Party" modifiers="{&quot;required&quot;: true}"/>
-                        <field name="user_id" invisible="1" can_create="true" can_write="true" modifiers="{&quot;invisible&quot;: true}"/>
+                        <!-- <field name="name" class="o_project_name oe_inline" string="Project Name" placeholder="e.g. Office Party" modifiers="{&quot;required&quot;: true}"/> -->
+                        <!-- <field name="user_id" invisible="1" can_create="true" can_write="true" modifiers="{&quot;invisible&quot;: true}"/> -->
                     </group>
                 
-                    <div name="alias_def" colspan="2" attrs="{'invisible': [('alias_domain', '=', False)]}" modifiers="{&quot;invisible&quot;: [[&quot;alias_domain&quot;, &quot;=&quot;, false]]}">
+                    <!-- <div name="alias_def" colspan="2" attrs="{'invisible': [('alias_domain', '=', False)]}" modifiers="{&quot;invisible&quot;: [[&quot;alias_domain&quot;, &quot;=&quot;, false]]}">
                         <label for="alias_name" class="oe_inline" string="Create tasks by sending an email to"/>
                         <field name="alias_enabled" invisible="1" on_change="1" modifiers="{&quot;invisible&quot;: true}"/>
                         <span>
                             <field name="alias_name" class="oe_inline" placeholder="e.g. office-party" on_change="1" modifiers="{}"/>@<field name="alias_domain" class="oe_inline" readonly="1" on_change="1" modifiers="{&quot;readonly&quot;: true}"/>
                         </span>
-                    </div>
+                    </div> -->
                     <!-- <group>
                         <field name="mission_id"/>
                     </group> -->
