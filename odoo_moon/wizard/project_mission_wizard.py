@@ -30,11 +30,11 @@ class ProjectWizard(models.TransientModel):
                 'company_id': self.env.company,
                 'name': mission_id.name,
                 'user_id': mission_id.leader_id,
-                # 'alias_contact': mission_id.name,
-                'alias_defaults':'',
-                'alias_id': '',
-                'alias_model_id': '',
-                'privacy_visibility': '',
-                'rating_status': '',
-                'rating_status_period': ''
+                'alias_contact': '{}',
+                'alias_defaults':'{}',
+                'alias_id': '{}',
+                'alias_model_id': '{}',
+                'privacy_visibility': '{}',
+                'rating_status': '{}',
+                'rating_status_period': '{}'
             })
