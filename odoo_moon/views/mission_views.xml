@@ -18,10 +18,9 @@
                             </group>
                             <group>
                                 <field name="crew_ids"/>
-                                <field name="create_project">
+                                <field name="create_projects">
                             </group>
                         </group>
-                        
                     </sheet>
                 </form>
             </field>
