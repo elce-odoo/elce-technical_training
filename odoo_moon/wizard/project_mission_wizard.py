@@ -27,8 +27,14 @@ class ProjectWizard(models.TransientModel):
             [('create_project', '=', True)], limit=1)
         if mission_id:
             project_id = self.env['project.project'].create({
-                'company_id': self.env.company,
+                'company_id': self.env.company.id,
                 'name': mission_id.name,
-                'user_id': mission_id.leader_id,
-                'alias_defaults': "{}"
+                'user_id': mission_id.leader_id.id,
+                # 'alias_contact': '',
+                # 'alias_defaults':'{}',
+                # 'alias_id': '',
+                # 'alias_model_id': '',
+                # 'privacy_visibility': '',
+                # 'rating_status': '',
+                # 'rating_status_period': ''
             })
