@@ -8,7 +8,7 @@
             <field name="arch" type="xml">
                 <form string="Create project">
                     <group>
-                        <field name=mission_id/>
+                        <field name="mission_id"/>
                         <field name="name" class="o_project_name oe_inline" string="Project Name" placeholder="e.g. Office Party" modifiers="{&quot;required&quot;: true}"/>
                         <field name="user_id" invisible="1" can_create="true" can_write="true" modifiers="{&quot;invisible&quot;: true}"/>
                     </group>
