@@ -27,7 +27,7 @@
         'views/mission_views.xml',
         'views/project_mission_inherit.xml',
         'wizard/project_wizard.xml',
-        'reports/spaceship_report_template',
+        'reports/spaceship_report_template.xml',
     ],
     
     'demo': [
