@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class SaleWizard(models.TransientModel):
+class ProjectWizard(models.TransientModel):
     _name = 'moon.project.wizard'
     _description = 'Wizard: Quick '
 
@@ -15,11 +15,11 @@ class SaleWizard(models.TransientModel):
                                  default=_default_mission)
 
 
-    mission_crew_ids = Many2many(comodel_name='res.partner',
+    mission_crew_ids = fields.Many2many(comodel_name='res.partner',
                                  string='Crew in mission',
                                  related='mission_id.crew_ids')
 
-    crew_ids = Many2many(comodel_name='res.partner',
+    crew_ids = fields.Many2many(comodel_name='res.partner',
                          string='Crew for the project')
 
     def create_projects(self):
