@@ -5,14 +5,13 @@ db = 'elce-odoo-elce-technical-training-moon-4862646'
 username = 'admin'
 password = 'admin'
 
-models = client.ServerProxy("{}/xmlrpc/2/object".format(url)).start()
-
 common = client.ServerProxy("{}/xmlrpc/2/common".format(url))
 print(common.version())
 
 uid = common.authenticate(db, username, password, {})
 print(uid)
 
+models = client.ServerProxy("{}/xmlrpc/2/object".format(url))
 
 
 # model_access = models.execute_kw(db, uid, password,
