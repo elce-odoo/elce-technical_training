@@ -29,7 +29,7 @@ class ProjectWizard(models.TransientModel):
             project_id = self.env['project.project'].create({
                 'company_id': self.env.company.id,
                 'name': mission_id.name,
-                'user_id': mission_id.leader_id.id,
+                'user_id': self.env.uid
                 # 'alias_contact': '',
                 # 'alias_defaults':'{}', test
                 # 'alias_id': '',

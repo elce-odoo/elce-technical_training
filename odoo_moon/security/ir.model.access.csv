@@ -1,7 +1,7 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-spaceship_admin,moon admin,model_moon_spaceship,group_moon_admin,1,1,1,1
+spaceship_admin,moon admin,model_moon_spaceship,base.group_user,1,1,1,1
 spaceship_read_all,moon read all,model_moon_spaceship,,1,0,0,0
-mission_admin,mission admin,model_moon_mission,group_moon_admin,1,1,1,1
+mission_admin,mission admin,model_moon_mission,base.group_user,1,1,1,1
 mission_read_all,mission read all,model_moon_mission,,1,0,0,0
-wizard_admin,wizard admin,model_moon_project_wizard,group_moon_admin,1,1,1,1
+wizard_admin,wizard admin,model_moon_project_wizard,base.group_user,1,1,1,1
 wizard_read_all,wizard read all,model_moon_project_wizard,,1,0,0,0
