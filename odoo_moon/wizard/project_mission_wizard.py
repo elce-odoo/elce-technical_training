@@ -31,7 +31,7 @@ class ProjectWizard(models.TransientModel):
                 'name': mission_id.name,
                 'user_id': self.env.uid
                 # 'alias_contact': '',
-                # 'alias_defaults':'{}', test
+                # 'alias_defaults':'{}',
                 # 'alias_id': '',
                 # 'alias_model_id': '',
                 # 'privacy_visibility': '',
