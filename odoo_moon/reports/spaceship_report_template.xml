@@ -4,8 +4,8 @@
         id="report_spaceship"
         model="moon.spaceship"
         string="Spaceship Report"
-        name="moon.report_spaceship_document"
-        file="moon.report_spaceship"
+        name="odoo_moon.report_spaceship_document"
+        file="odoo_moon.report_spaceship"
         report_type="qweb-html"/>
 
     <template id="report_spaceship_document">
