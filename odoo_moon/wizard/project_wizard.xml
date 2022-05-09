@@ -9,8 +9,8 @@
                 <form string="Create project from mission">
                     <group>
                         <field name="mission_id"/>
-                        <field name="mission_crew_ids" invisible="1"/>
-                        <field name="crew_ids" domain="[('id', 'in', 'mission_crew_ids')]"/>
+                        <!-- <field name="mission_crew_ids" invisible="1"/>
+                        <field name="crew_ids" domain="[('id', 'in', 'mission_crew_ids')]"/> -->
                     </group>
                     <footer>
                         <button name="create_projects" type="object" string="Create" class="oe_highlight"/>
@@ -31,7 +31,7 @@
         </record> -->
 
         <record id="internal_transfer_action_view_wizard" model="ir.actions.act_window">
-            <field name="name">Internal Transfer</field>
+            <field name="name">Create Project</field>
             <field name="res_model">moon.project.wizard</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
