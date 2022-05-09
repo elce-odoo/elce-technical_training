@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<odoo>
+    <data>
+        <record id="mission_view_form" model="ir.ui.view">
+            <field name="name">moon.mission.form</field>
+            <field name="model">moon.mission</field>
+            <field name="arch" type="xml">
+                <form string="Mission Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <group>
+                                <field name="destination"/>
+                                <field name='active'/>
+                                <field name='spaceship_id'/>
+                                <field name='leader_id'/>
+                            </group>
+                            <group>
+                                <field name="crew_ids"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -18,6 +18,7 @@
                             </group>
                             <group>
                                 <field name="crew_ids"/>
+                                <field name="create_project"
                             </group>
                         </group>
                         

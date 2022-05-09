@@ -17,3 +17,4 @@ class Project(models.Model):
 
     spaceship_id = fields.Many2one(string='Spaceship',
                                 related='mission_id.spaceship_id')
+

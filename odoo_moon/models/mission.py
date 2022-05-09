@@ -25,4 +25,7 @@ class Mission(models.Model):
     crew_ids = fields.Many2many(comodel_name='res.partner',
                                 string='Crew')
 
+    create_project = fields.Boolean(string='Create project for this mission',
+                                    default=False)
+
     
