@@ -17,7 +17,7 @@
     'category': 'Training',
     'version': '0.1',
     
-    'depends': ['project'],
+    'depends': ['project', 'website'],
     
     'data': [
         'security/security.xml',
@@ -28,6 +28,7 @@
         'views/project_mission_inherit.xml',
         'wizard/project_wizard.xml',
         'reports/spaceship_report_template.xml',
+        'views/moon_web_templates.xml',
     ],
     
     'demo': [

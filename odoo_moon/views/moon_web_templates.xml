@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="mission_website">
+            <t t-call="website.layout">
+                <t t-set="title">Moon</t>
+                <div class="oe_structure">
+                    <div class="container">
+                        <h1>Missions</h1>
+                        <t t-foreach="missions" t-as="mission">
+                            <h3>
+                                <t t-esc="mission.id"/>
+                                <t t-esc="mission.name"/>
+                            </h3>
+                        </t>
+                        <p>Spaceship:
+                            <span t-field="mission.spaceship_id"/>
+                        </p>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="spaceship_website">
+            <t t-call="website.layout">
+                <t t-set="title">Spaceship</t>
+                <div class="container">
+                    <h3 t-field="session-name"/>
+                    <p>Last Modified:
+                        <i t-field="spaceship.write_date" t-field-options='{"format":"long"}'/>
+                    </p>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
