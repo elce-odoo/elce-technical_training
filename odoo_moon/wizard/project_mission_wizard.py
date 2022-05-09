@@ -26,12 +26,11 @@ class ProjectWizard(models.TransientModel):
         mission_id = self.env['moon.mission'].search(
             [('create_project', '=', True)], limit=1)
         if mission_id:
-            for member in self.crew_ids:
-                project_id = self.env['project.project'].create({
-                    'company_id': self.env.company,
-                    'name': mission_id.name,
-                    'user_id': self.env.user,
-                    'alias_enabled': 1,
-                    'alias_name': mission_id.name,
-                    'alias_id': mission_id.name,
-                })
+            project_id = self.env['project.project'].create({
+                'company_id': self.env.company,
+                'name': mission_id.name,
+                'user_id': self.env.user,
+                'alias_enabled': 1,
+                'alias_name': mission_id.name,
+                'alias_id': mission_id.name,
+            })
