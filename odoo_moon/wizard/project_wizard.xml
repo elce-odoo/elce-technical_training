@@ -20,7 +20,6 @@
                             <field name="alias_name" class="oe_inline" placeholder="e.g. office-party" on_change="1" modifiers="{}"/>@<field name="alias_domain" class="oe_inline" readonly="1" on_change="1" modifiers="{&quot;readonly&quot;: true}"/>
                         </span>
                     </div>
-                </form>
                     <!-- <group>
                         <field name="mission_id"/>
                     </group> -->
