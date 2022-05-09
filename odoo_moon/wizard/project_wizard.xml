@@ -24,8 +24,7 @@
         <record model="ir.actions.act_window" id="launch_project_wizard">
             <field name="name">Create Project</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="binding_model_id">moon.mission</field>
-            <field name="res_model">moon.project.wizard</field>
+            <field name="res_model">moon.mission</field>
             <field name="view_mode">form</field>
             <field name="target">new</field>
         </record>
