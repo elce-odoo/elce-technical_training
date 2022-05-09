@@ -29,9 +29,12 @@ class ProjectWizard(models.TransientModel):
             project_id = self.env['project.project'].create({
                 'company_id': self.env.company,
                 'name': mission_id.name,
-                'user_id': self.env.user,
-                'alias_enabled': 1,
-                'alias_name': mission_id.name,
-                'alias_id': mission_id.name,
-                'mail_alias': '@elce-odoo-elce-technical-training-moon-4863983.dev.odoo.com',
+                'user_id': mission_id.leader_id,
+                'alias_contact': '',
+                'alias_defaults':'',
+                'alias_id': '',
+                'alias_model_id': '',
+                'privacy_visibility': '',
+                'rating_status': '',
+                'rating_status_period': ''
             })
