@@ -13,9 +13,11 @@
                                 <t t-esc="mission.name"/>
                             </h3>
                         </t>
-                        <p>Spaceship:
-                            <span t-field="mission.spaceship_id"/>
-                        </p>
+                        <t t-foreach="missions" t-as="mission">
+                            <h3>
+                                <t t-esc="mission.spaceship_id"/>
+                            </h3>
+                        </t>
                     </div>
                 </div>
             </t>
