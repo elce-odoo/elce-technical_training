@@ -20,7 +20,7 @@
                 </form>
             </field>
         </record>
-
+<!-- 
         <record model="ir.actions.act_window" id="launch_project_wizard">
             <field name="name">Create Project</field>
             <field name="type">ir.actions.act_window</field>
@@ -28,7 +28,7 @@
             <field name="view_mode">form</field>
             <field name="view_id" ref="odoo_moon.mission_view_form"/>
             <field name="target">new</field>
-        </record>
+        </record> -->
 
         <record id="internal_transfer_action_view_wizard" model="ir.actions.act_window">
             <field name="name">Internal Transfer</field>
